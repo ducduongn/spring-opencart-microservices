@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  config-server:
+    image: springcommunity/spring-opencart-config-server
+    container_name: config-server
+    mem_limit: 512M
+    ports:
+      - 8888:8888

@@ -16,13 +16,9 @@
     <packaging>pom</packaging>
 
     <modules>
-<!--        <module>spring-opencart-admin-server</module>-->
-<!--        <module>spring-opencart-customers-service</module>-->
-<!--        <module>spring-opencart-vets-service</module>-->gi
-<!--        <module>spring-opencart-visits-service</module>-->
         <module>spring-opencart-config-server</module>
-<!--        <module>spring-opencart-discovery-server</module>-->
-<!--        <module>spring-opencart-api-gateway</module>-->
+        <module>spring-opencart-discovery-server</module>
+        <module>spring-opencart-product-service</module>
     </modules>
 
     <properties>

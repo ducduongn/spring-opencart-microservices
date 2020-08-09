@@ -7,3 +7,13 @@ services:
     mem_limit: 512M
     ports:
       - 8888:8888
+
+  discovery-server:
+    image: springcommunity/spring-opencart-discovery-server
+    container_name: discovery-server
+    mem_limit: 512M
+    depends_on:
+      - config-server
+    entrypoint: ["./dockerize","-wait=tcp://config-server:8888","-timeout=60s","--","java", "org.springframework.boot.loader.JarLauncher"]
+    ports:
+      - 8761:8761

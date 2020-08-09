@@ -4,5 +4,6 @@
     <file url="file://$PROJECT_DIR$/spring-opencart-config-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-opencart-discovery-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-opencart-product-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../spring-petclinic-microservices/spring-petclinic-discovery-server/src/main/resources/application.properties" charset="UTF-8" />
   </component>
 </project>

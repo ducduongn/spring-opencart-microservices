@@ -8,10 +8,6 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.util.Set;
 
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
 @Entity
 @Table(name = "brand")
 public class Brand {
@@ -29,5 +25,40 @@ public class Brand {
 
     @Column(name = "branddescription")
     private String description;
+
+    public Brand() {
+    }
+
+    public Integer getBrandId() {
+        return brandId;
+    }
+
+    public void setBrandId(Integer brandId) {
+        this.brandId = brandId;
+    }
+
+    public Set<Product> getProducts() {
+        return products;
+    }
+
+    public void setProducts(Set<Product> products) {
+        this.products = products;
+    }
+
+    public String getBrandName() {
+        return brandName;
+    }
+
+    public void setBrandName(String brandName) {
+        this.brandName = brandName;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
 }

@@ -10,6 +10,7 @@
         <module name="spring-opencart-discovery-server" />
         <module name="spring-opencart-config-server" />
         <module name="spring-opencart-customer-service" />
+        <module name="customerservice" />
         <module name="spring-opencart-product-service" />
         <module name="productservice" />
       </profile>

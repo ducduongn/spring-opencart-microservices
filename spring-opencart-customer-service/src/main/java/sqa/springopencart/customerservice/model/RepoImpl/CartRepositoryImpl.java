@@ -32,7 +32,7 @@ public class CartRepositoryImpl implements CartRepository {
         Query query = this.em.createNativeQuery("INSERT INTO `wishlist-product`(customerId, productId) " +
                 "VALUES (?, ?)");
         query.setParameter(1, customerID);
-        query.setParameter(2, product.getProductID());
+        query.setParameter(2, product.getProductId());
         query.executeUpdate();
     }
 

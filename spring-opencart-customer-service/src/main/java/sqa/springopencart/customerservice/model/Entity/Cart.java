@@ -10,10 +10,6 @@ import sqa.springopencartproductservice.model.Entity.Product;
 import javax.persistence.*;
 import java.util.Set;
 
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
 @Entity
 @Table(name = "cart")
 public class Cart {
@@ -37,4 +33,46 @@ public class Cart {
     @Column(name = "quantity")
     private int quantity;
 
+    public Integer getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(Integer customerId) {
+        this.customerId = customerId;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
+    public Set<Product> getProducts() {
+        return products;
+    }
+
+    public void setProducts(Set<Product> products) {
+        this.products = products;
+    }
+
+    public String getDateAdded() {
+        return dateAdded;
+    }
+
+    public void setDateAdded(String dateAdded) {
+        this.dateAdded = dateAdded;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public Cart() {
+    }
 }

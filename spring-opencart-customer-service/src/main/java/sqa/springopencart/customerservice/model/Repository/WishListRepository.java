@@ -1,21 +1,24 @@
 package sqa.springopencart.customerservice.model.Repository;
 
-import sqa.springopencart.customerservice.model.Entity.Customer;
+import sqa.springopencart.customerservice.model.Entity.WishList;
+import sqa.springopencartproductservice.model.Entity.Product;
 
 import java.util.Collection;
 
 public interface WishListRepository {
-    Customer findByAccountNameAndPassword(String accountName, String password);
+    Collection<Product> findAllProductInWishList(Integer ID);
 
-    Collection<Customer> findCustomerByName(String customerName);
+    void addToCart(Integer productId, Integer customerID);
 
-    Customer findCustomerByID(Integer ID);
+    void removeProductInWishList(Product product);
 
-    Customer findCustomerAccount(String accountName);
+    void save(WishList wishList);
 
-    Collection<Customer> findAllCustomer();
+    WishList findWishListByID(Integer ID);
 
-    void addCustomer(Customer customer);
+    void addProduct(Integer productID, Integer customerID);
 
-    void saveInfo(Customer customer);
+    Product findProductByID(Integer ID);
+
+    void init(Integer ID);
 }

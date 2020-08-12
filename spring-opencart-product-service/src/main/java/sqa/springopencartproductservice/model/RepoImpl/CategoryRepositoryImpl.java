@@ -5,10 +5,15 @@ import sqa.springopencartproductservice.model.Entity.Category;
 import sqa.springopencartproductservice.model.Entity.Product;
 import sqa.springopencartproductservice.model.Repository.CategoryRepository;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import java.util.Collection;
 
 @Repository
 public class CategoryRepositoryImpl implements CategoryRepository {
+    @PersistenceContext
+    private EntityManager em;
+
     @Override
     public Collection<Product> findProductByCategory(int CategoryID) {
         return null;

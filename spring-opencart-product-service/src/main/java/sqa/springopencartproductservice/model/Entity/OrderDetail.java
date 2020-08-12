@@ -32,4 +32,47 @@ public class OrderDetail {
 
     @Column(name = "quantity")
     private int quantity;
+
+    public OrderDetail() {
+    }
+
+    public Integer getOrderDetailId() {
+        return orderDetailId;
+    }
+
+    public void setOrderDetailId(Integer orderDetailId) {
+        this.orderDetailId = orderDetailId;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
+    }
+
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
 }

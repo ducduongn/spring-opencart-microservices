@@ -7,17 +7,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-opencart-discovery-server" />
+        <module name="spring-opencart-apigateway" />
         <module name="spring-opencart-config-server" />
         <module name="spring-opencart-customer-service" />
-        <module name="customerservice" />
         <module name="spring-opencart-product-service" />
         <module name="productservice" />
+        <module name="spring-opencart-discovery-server" />
+        <module name="customerservice" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="customerservice" target="11" />
       <module name="productservice" target="11" />
+      <module name="spring-opencart-apigateway" target="11" />
       <module name="spring-opencart-config-server" target="1.8" />
       <module name="spring-opencart-customer-service" target="11" />
       <module name="spring-opencart-discovery-server" target="1.8" />
@@ -29,6 +31,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="customerservice" options="-parameters" />
       <module name="productservice" options="-parameters" />
+      <module name="spring-opencart-apigateway" options="-parameters" />
       <module name="spring-opencart-config-server" options="-parameters" />
       <module name="spring-opencart-customer-service" options="-parameters" />
       <module name="spring-opencart-discovery-server" options="-parameters" />

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/spring-opencart-customer-service/customerservice.iml" filepath="$PROJECT_DIR$/spring-opencart-customer-service/customerservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-opencart-apigateway/spring-opencart-apigateway.iml" filepath="$PROJECT_DIR$/spring-opencart-apigateway/spring-opencart-apigateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-opencart-config-server/spring-opencart-config-server.iml" filepath="$PROJECT_DIR$/spring-opencart-config-server/spring-opencart-config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-opencart-customer-service/spring-opencart-customer-service.iml" filepath="$PROJECT_DIR$/spring-opencart-customer-service/spring-opencart-customer-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-opencart-discovery-server/spring-opencart-discovery-server.iml" filepath="$PROJECT_DIR$/spring-opencart-discovery-server/spring-opencart-discovery-server.iml" />
